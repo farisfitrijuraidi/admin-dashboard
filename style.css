@@ -6,3 +6,28 @@
     font-style: normal;
     font-display: swap;
 }
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: #2596D1;
+    grid-row: 1 / -1;
+}
+
+.header {
+    grid-column: 2;
+}
+
+.main-content {
+    background-color: #E3E8F1;
+}
