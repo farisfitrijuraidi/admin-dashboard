@@ -7,6 +7,10 @@
     font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -15,7 +19,7 @@ body {
 .container {
     display: grid;
     height: 100%;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 7fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -30,4 +34,52 @@ body {
 
 .main-content {
     background-color: #E3E8F1;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.sidebar-link:hover,
+.sidebar-link:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+svg {
+    width: 24px;
+    fill: white;
+    margin: 0 16px;
+}
+
+span {
+    font-family: 'Roboto';
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#dashboard {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#dashboard,
+#communities {
+    margin-bottom: 64px;
+}
+
+#dashboard svg {
+    width: 40px;
+    margin: 0 8px;
+}
+
+#dashboard span {
+    font-size: 1.5rem;
 }
