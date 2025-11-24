@@ -42,7 +42,7 @@ body {
     background-color: #E3E8F1;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    height: 100%;
+    grid-template-rows: auto 1fr;
 }
 
 .sidebar-link {
@@ -185,10 +185,11 @@ button:active {
 
 .main-content .project {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto repeat(3, 1fr);
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px 24px;
-    padding: 24px 16px 80px 24px;
+    padding: 16px 16px 80px 24px;
 }
 
 .box {
@@ -201,7 +202,6 @@ button:active {
 
 .box svg {
     fill: black;
-    width: ;
 }
 
 .svg {
@@ -209,7 +209,14 @@ button:active {
     justify-content: flex-end;
 }
 
+.main-content > span {
+    color: black;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 24px 0 0 24px;
+    vertical-align: bottom;
+}
+
 .project span {
-    grid-column: 1 / span 2;
     color: black;
 }
