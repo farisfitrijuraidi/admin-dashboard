@@ -40,6 +40,9 @@ body {
 
 .main-content {
     background-color: #E3E8F1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
 }
 
 .sidebar-link {
@@ -178,4 +181,35 @@ button:hover {
 button:active {
     transform: translateY(2px);
     filter: brightness(0.9);
+}
+
+.main-content .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 16px 24px;
+    padding: 24px 16px 80px 24px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 24px 16px;
+    border-left: 8px solid #F0B429;
+}
+
+.box svg {
+    fill: black;
+    width: ;
+}
+
+.svg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project span {
+    grid-column: 1 / span 2;
+    color: black;
 }
