@@ -198,10 +198,16 @@ button:active {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     padding: 24px 16px;
     border-left: 8px solid #F0B429;
+    display: flex;
+    flex-direction: column;
 }
 
 .box svg {
     fill: black;
+}
+
+.box p {
+    flex-grow: 1;
 }
 
 .svg {
